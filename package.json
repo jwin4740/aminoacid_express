@@ -1,0 +1,25 @@
+{
+  "name": "expresswars",
+  "version": "1.0.0",
+  "description": "express application star wars related",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwin4740/expresswars.git"
+  },
+  "keywords": [
+    "star",
+    "wars",
+    "express",
+    "node"
+  ],
+  "author": "James J Winkle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jwin4740/expresswars/issues"
+  },
+  "homepage": "https://github.com/jwin4740/expresswars#readme"
+}
