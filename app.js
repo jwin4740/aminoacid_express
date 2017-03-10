@@ -4,6 +4,11 @@ var express = require('express');
 // new instance of express
 var app = express();
 
+var exphbs = require("express-handlebars");
+
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
+
 
 var port = 3000;
 //Routes
@@ -11,14 +16,16 @@ var port = 3000;
 //home
 
 app.get('/', function (request, response) {
-	response.send("hello world");
+	response.render("home", {
+		tagline : "Let's build a protein"
+	});
 });
 
 // allows user to type in a number in the url (which is optional because question mark)
 	// the user input is stored in the episodeNumber variable
-app.get('/starwars_episode/:episode_number?', function (request, response) {
-	var episodeNumber = request.params.episode_number;
-	response.send("This is the page for episode " + episodeNumber);
+app.get('/amino_acids/:amino_acid?', function (request, response) {
+	var aminoAcid = request.params.amino_acid;
+	response.send("This is the page for aa " + aminoAcid);
 });
 
 // NOT FOUND (don't need an 'if statement' because requests execute functions sequentially)
