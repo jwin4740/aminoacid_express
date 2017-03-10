@@ -1,2 +1,2 @@
-# expresswars
-express app with star wars
+# aminoacid_express
+express app with amino acids
