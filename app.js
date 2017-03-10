@@ -25,7 +25,7 @@ app.get('/', function (request, response) {
 	// the user input is stored in the episodeNumber variable
 app.get('/amino_acids/:amino_acid?', function (request, response) {
 	var aminoAcid = request.params.amino_acid;
-	response.send("This is the page for aa " + aminoAcid);
+	response.send("This is the page for amino acid info " + aminoAcid);
 });
 
 // NOT FOUND (don't need an 'if statement' because requests execute functions sequentially)
